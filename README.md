@@ -27,6 +27,8 @@
 
 - Installed dotenv for load env. variables from .env into process.env
 
+### `npm i axios` - for http requests
+
 ### `npm install react-router-dom`
 
 ### `npm install react-transition-group`
