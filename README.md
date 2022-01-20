@@ -1,10 +1,10 @@
 # App Description
 
-- The second version of my personal portfolio built from the ground-up with React.js, SCSS / SASS, JS, & HTML.  End users can navigate a user-flow that teaches them about both myself and the work I do.  
+-  
 
 ## Deployment:
 
-- (https://tpadilla.com)
+- 
 
 <!-- ## Usage Instructions:
 
@@ -19,8 +19,7 @@
 
 ## Limitations & Future Iterations:
 
-- As of 11/12/21 - Integrate a shopping cart for an e-commerce experience
-- Consider creating additional routes
+- 
 
 ## Integrations, Tools, & Libraries:
 
