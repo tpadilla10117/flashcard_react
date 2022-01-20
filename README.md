@@ -16,6 +16,7 @@
 ## Tech Stack:
 
 - Node.js, JS, React.js, HTML, CSS, SASS, FaIcons, HeroIcons
+- {https://opentdb.com/api_config.php} - Used the Open Trivia Database for http requests
 
 ## Limitations & Future Iterations:
 
