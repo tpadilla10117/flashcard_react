@@ -1,0 +1,262 @@
+#casestudy-countdown {
+    /* border-left: 2px solid #ddd; */
+    background: #0c0c0c;
+    display: flex;
+    height: 100vh;
+    /* height: 100%; */
+    max-height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    /* padding: 0 30px; */
+    /* height: 800px; */
+    position: relative;
+    object-fit: contain;
+    /* padding: 100px; */
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.6) 100% ), linear-gradient(190deg, rgba(0,0,0,0.2) 0%, transparent 100%);
+        z-index: 2;
+    }
+
+    @media screen and (max-width: 1000px) {
+        #casestudy-countdown {
+            border: none;
+            /* height: 325px; */
+            /* display: none; */
+            /* margin-top: -75px; */
+        }
+     }
+
+    .casestudy-heroSection-bg {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+
+        .casestudy-hero-img {
+            width: 100%;
+            height: 100%;
+            -o-object-fit: cover;
+            object-fit: cover;
+            background: #232a34;
+        }
+    }
+
+    .casestudy-hero-content {
+        z-index: 3;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* padding: 20px; */
+        justify-content: space-evenly;
+        background: hsla(0,0%,42.7%,.12);
+        box-shadow: 0 3px 10px rgb(0 0 0 / 10%);
+        backdrop-filter: blur(1px);
+        border-radius: 5px;
+        /* padding: 75px 50px 75px 50px; */
+        width: 100%;
+        height: 100%;
+        /* border: 2px solid blue; */
+
+        @media only screen and (max-device-width: 768px) {
+            justify-content:space-evenly;
+            /* justify-content: space-around; */
+            /* justify-content: space-evenly; */
+            /* margin-top: 40px; */
+            width: 100%;
+            height: 100%;
+        }
+
+
+        .countdown-heading-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* padding: 40px; */
+            background: hsla(0,0%,42.7%,.12);
+            box-shadow: 0 3px 10px rgb(0 0 0 / 10%);
+            backdrop-filter: blur(1px);
+            border-radius: 5px;
+            /* border: 10px solid blue; */
+            max-width: 100%;
+            /* width: 50%; */
+
+            @media only screen and (max-device-width: 768px) {
+                flex-direction: column;
+                padding: 20px;
+                justify-content: center;
+                /* width: 100%; */
+               /*  background: none;
+                box-shadow: none;
+                backdrop-filter: none; */
+                margin: 20px;
+                width: 60%;
+
+            }
+
+            @media only screen and (min-device-width: 1024px) and (max-device-height: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)  {
+                flex-direction: column;
+                width: 50%;
+            }
+            
+
+            @media only screen and (min-device-width: 375px) and(max-device-width: 768px) {
+                width: 80%;
+            }
+
+            .countdown-heading {
+                color: #36BF9D;
+                font-family: 'Lora', sans-serif;
+                font-size: 48px;
+                text-align: center;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                padding: 20px;
+                background: hsla(0,0%,42.7%,.12);
+                /* box-shadow: 0 3px 10px rgb(0 0 0 / 10%); */
+                backdrop-filter: blur(1px);
+                /* height: 100px; */
+                width: 100%;
+                /* border: 2px solid red; */
+                height: 100%;
+                display: flex;
+                justify-content: center;
+
+                
+                
+                
+
+                .countdown-heading-interval {
+                    color: #fff;
+                    margin-left: 10px;
+                    /* display: flex;
+                    align-items: center;
+                    justify-content: center; */
+                    
+                }
+
+                @media only screen and (max-device-width: 768px) {
+                    font-size: 15px;
+                    /* height: 40px; */
+                }
+            }
+        }
+
+        
+       /*  .casestudy-hero-h1 {
+            color: #fff;
+            font-family: 'Original surfer', sans-serif;
+            font-size: 48px;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+
+        } */
+
+        .casestudy-hero-p {
+            /* margin-top: 5px; */
+            color: #fff;
+            font-size: 24px;
+            text-align: center;
+            max-width: 400px;
+            font-family: 'Original surfer', sans-serif;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            /* margin: 40px; */
+            /* padding: 40px; */
+            /* border: 2px solid blue; */
+
+            @media only screen and (max-device-width: 768px) {
+                font-size: 15px;
+                margin-top: 50px;
+                padding: 20px;
+            }
+
+            @media only screen and (min-device-width: 375px) and(max-device-width: 768px) {
+                margin-top: 80px;
+            }
+
+            
+
+        }
+    }
+
+    .casestudy-socialmedia {
+        max-width: 1000px;
+        width: 100%;
+        height: 100px;
+        max-height: 100%;
+        display: flex;
+        justify-content: center;
+        /* border: 2px solid orange; */
+
+        @media only screen and (max-device-width: 768px) {
+            
+            
+        }
+        
+        
+        .casestudy-socialmedia-wrap {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 1100px;
+            /* margin: 40px auto 0 auto; */
+            /* border: 2px solid yellow; */
+            
+        
+            @media screen and (max-width: 820px) {
+                flex-direction: column;
+            }
+            
+
+            .casestudy-socialicons {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 300px;
+
+                .casestudy-socialiconlink {
+                    color: #fff;
+                    font-size: 44px;
+                    opacity: .5;
+                    transition: all 0.3s ease 0s;
+
+                    &:hover {
+                        opacity: 1;
+                        color: #36BF9D;
+                        transform: translateY(-7px);
+                     
+                    }
+
+                }
+
+            
+            }
+
+            @media screen and (max-width: 768px) {
+                .casestudy-socialicons {
+                    width: 200px;
+
+                    .casestudy-socialiconlink {
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+    }
+
+
+}

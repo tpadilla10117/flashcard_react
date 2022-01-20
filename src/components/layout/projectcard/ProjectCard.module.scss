@@ -1,0 +1,175 @@
+.projCardContainer {
+    
+    width: 100%;
+    /* padding: 15px 20px 15px 20px; */
+    padding: 10px;
+    height: 100%;
+    /* max-height: 100%; */
+    max-width: 100%;
+    margin: 0 auto;
+    /* border: 2px solid yellow; */
+    /* overflow: auto; */
+    /* box-shadow: 0px 8px 15px rgb(0 0 0 / 10%);
+    background: rgba(109, 109, 109, 0.12); */
+    
+   
+    &:hover {
+      cursor: pointer;
+    }
+
+    @media only screen and (max-width: 768px) {
+      /* padding: 5px; */
+      display: flex;
+      align-items: center;
+      align-content: center;
+      justify-content: space-between;
+    }
+
+    @media only screen and (min-device-width: 1024px) and (max-device-height: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)  {
+          height: 400px;
+        }
+        
+    
+    /* @media only screen and (min-width: 1000px) {
+      height: 100%;
+    } */
+  
+    .projCardBox {
+      position: relative;
+      height: 100%;
+      box-sizing: border-box;
+      display: inline-block;
+      overflow: hidden;
+      /* box-shadow: 0 0 20px #494f653b; */
+      /* box-shadow: 0px 8px 15px rgb(0 0 0 / 10%); */
+      /* border: 1px solid blue; */
+      background: rgba(109, 109, 109, 0.12);
+      box-shadow: 0px 8px 15px rgb(0 0 0 / 10%);
+      border: solid 5px rgba(109, 109, 109, 0.12);
+
+      max-width: 100%;
+      max-height: 100%;
+      width: 100%;  
+      
+      /* min-height: 100%;
+          height: auto; */
+      /* border: 1px inset #386FA4; */
+      /* border: 5px solid pink; */
+      
+      border-radius: 5px;
+
+      @media only screen and (max-width: 768px) {
+        height: 100%;
+      }
+    
+      .imgWrapper {
+        position: relative;
+        overflow: hidden;
+        /* border-radius: 5px; */
+        height: 100%;
+        max-height: 100%;
+        max-width: 100%;
+        height: 100%;
+        /* display: flex;
+        flex:1; */
+
+        @media only screen and (max-width: 768px) {
+          height: 300px;
+        }
+
+        @media only screen and (min-width: 1025px) {
+          height: 400px;
+        }
+
+        /* @media only screen and (min-device-width: 1024px) and (max-device-height: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)  {
+          height: 300px;
+        } */
+        
+        
+        
+        img {
+          max-width: 100%;
+          max-height: 100%;
+          transition: transform 2s;
+          width: 100%;
+          background-size: cover;
+          background-position: center;
+          object-fit: cover;
+          image-rendering: auto;
+          image-rendering: crisp-edges;
+          image-rendering: pixelated;
+          /* height: auto;    */  
+          /* display: flex;   */
+          min-height: 100%;
+          height: 100%;
+          
+          /* flex: 1; */
+          
+        }
+      }
+      
+      .detailsBox {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        bottom: 10px;
+        right: 10px;
+        background: linear-gradient(#386FA4,#36BF9D);
+        border-radius: 18px;
+        opacity: .95;
+        transform: scaleY(0);
+        transition: transform .5s;
+        /* background: hsla(0,0%,42.7%,.12); */
+        box-shadow: 0 3px 30px rgb(0 0 0 / 10%);
+        backdrop-filter: blur(10px);
+  
+        .contentBox {
+          position: absolute;
+          text-align: center;
+          color: #fff;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          
+        
+          p {
+            /* font-size: 35px; */
+            font-size: 16px;
+            /* text-transform: uppercase; */
+            /* padding: 4rem; */
+            font-family: 'Lora', sans-serif;
+            color: #fff;
+            width: 100%;
+            display: inline-block;
+            vertical-align: middle;
+
+            @media only screen and (max-device-width: 480px) {
+              /* font-size: 25px; */
+              padding: 5px;
+              
+            }
+            
+          }
+          
+        }
+      }
+    }
+  }
+    
+  
+  .projCardContainer .projCardBox:hover .imgWrapper img {
+    transform: scale(1.2);
+  }
+      
+  
+  .projCardContainer .projCardBox:hover .detailsBox {
+    transform: scaleY(1)
+  }
+
+  /* @media only screen and (max-width: 768px) {
+    .projCardContainer .projCardBox .detailsBox .contentBox p {
+      
+      
+    }
+  } */

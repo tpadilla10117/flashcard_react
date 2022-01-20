@@ -1,0 +1,49 @@
+/* Horizontal Nav: */
+
+ @media screen and (max-width: 1000px) {
+
+    .horizontal-navbar {
+ 
+        transition: 0.8s all ease;
+        padding: 0px;
+        height: 8vh;
+        justify-content: flex-end;
+        width: 100%;
+        border-right: none;
+        display: flex;
+        position: fixed;
+        max-width: 100%;
+        align-items: center;
+        /* box-shadow: 0 3px 30px rgb(0 0 0 / 10%);
+        backdrop-filter: blur(5px); */
+        
+      
+        .hnav-items-container {
+            display: none;
+        }
+    
+        .hnav-mobile-icon-container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        
+
+        .hnav-mobile-icon {
+        
+          display: flex;
+          transform: translate(-15%);
+          cursor: pointer;
+          /* color: #fff; */
+          color: #386FA4;
+          height: 60%;
+        }
+      
+      }
+
+    }
+
+    
+  }

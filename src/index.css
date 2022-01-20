@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont,'Dosis','Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+:root {
+
+  --gray-primary: #C4C4C4;
+  --main-bg-color: #F0E9DC; /* Alabaster */
+  --sec-bg-color: #07678E; /* Blue Sapphire */
+  --main-btn-color: #2DBCB4; /* Tiffany Blue */
+  --neutral-color: #12130F; /* Smoky Black */
+  --misc-color: #BF4E30; /* Vermillion */
+  --txt-color: #2c426a;
+  /* #386FA4 */
+  }

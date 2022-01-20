@@ -1,0 +1,27 @@
+.List {
+    list-style: disc;
+    margin-bottom: 20px;
+
+    li {
+      padding: 5px;
+    }
+  }
+  
+  .Modal {
+    padding-left: 1.25rem;
+  }
+  
+  .Skill {
+    column-count: 2;
+    column-gap: 2rem;
+    margin: 1rem auto 0 auto;
+    overflow: hidden;
+    padding-left: 1.25rem;
+  }
+
+
+  /* @include medium-screens {
+  .Skill {
+    column-count: 3;
+  }
+} */

@@ -1,0 +1,81 @@
+.app-container {
+  /* height: 100vh; */
+  max-height: 100%;
+  max-width: 100%;
+  width: 100%;
+  background-color: #f0e9dc;
+  /* background: linear-gradient(to top,#386FA4 30%, #f0e9dc 40%); */
+  /* overflow: auto; */
+}
+
+.fade {
+  /* position: absolute; */
+  /* left: 15px;
+  right: 15px; */
+  width: 100%;
+  height: 100vh;
+  max-height: 100%;
+  overflow: auto;
+}
+
+/* Route-Transition Styling */
+  .fade-enter {
+    opacity: 0;
+    transform: scale(1.1);
+  }
+  
+ /*  .fade-enter */.fade-enter-active {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 300ms, transition 300ms /* ease-in */;
+  }
+
+  .fade-exit {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  /* .fade-exit */.fade-exit-active {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 200ms, transform 300ms;
+  }
+
+.route-container {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  min-height: 100%;
+  max-width: 100%;
+  /* grid-column-start: 2; */ /* crucial for content nested in second column */
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+
+/* @media screen and (max-width: 768px) {
+  .route-container {
+    
+  }
+} */
+
+@media screen and (max-width: 1000px) {
+  .route-container {
+    margin-top: -8vh;
+  }
+}
+
+/* TODO:My columns in app arent set properly */
+@media only screen and (min-device-width: 1000px) {
+
+    .app-container {
+      display: grid;
+      /* grid-template-columns: 10vw auto; */      
+      /* grid-template-columns: 10% 90%;  */
+      /* grid-template-columns: 1fr 1fr; */
+      grid-template-columns: 1fr 9fr;
+    }
+  
+  }
+
+

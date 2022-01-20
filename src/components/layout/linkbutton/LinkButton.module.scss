@@ -1,0 +1,62 @@
+
+/* .Button p {
+    font-size: .8rem;
+    padding: 1rem 0;
+    text-align: center;
+} */
+
+.Button {
+    border: 1px solid #60D2B6;
+    outline: none;
+    background: #fff;
+    color:#60D2B6;
+    cursor: pointer;
+    display: inline-block;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    border-radius: 20px;
+    font-family: 'Lora', sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 16px;
+    text-align: center;
+    padding: 12px;
+    line-height: 120%;
+    height: 48px;
+    min-width: 48px;
+    width: 250px;
+    margin-top: 2rem;
+    margin-top: 20px;
+    text-decoration: none;
+    /* opacity: .5; */
+    transition: all 0.3s ease 0s;
+    box-shadow: 0 5px 0 0 rgba(0, 0, 0, 0.1);
+}
+
+.Button:hover {
+  background-color: #36BF9D; //Mountain Meadow
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+  
+}
+
+.Wide {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+a.Button {
+    display: inline-block;
+  
+    &:hover {
+      text-decoration: initial;
+    }
+  }
+
+/* .DisabledButton {
+  cursor: not-allowed;
+    border-style: dashed;
+    opacity: 0.4;
+} */
