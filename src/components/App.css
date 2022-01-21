@@ -1,9 +1,7 @@
 .app-container {
-  height: 100vh;
   max-height: 100%;
   max-width: 100%;
-  width: 100%;
-  background-color: #f0e9dc;
+  margin: 1rem 2rem;
   /* background: linear-gradient(to top,#386FA4 30%, #f0e9dc 40%); */
   /* overflow: auto; */
 }

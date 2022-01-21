@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 /* import { Sample_Flashcards }  from '../../../utils/seed'; */
 import { Flashcard } from "../../utils";
 import './Flashcardlist.scss';
